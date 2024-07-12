@@ -191,7 +191,7 @@
 
 				<!-- Checking CVar's log -->
 				
-				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$ActiveRadiationStatus"/>
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$ActiveRadiationStatus"/> -->
 				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$IRradiationStatus"/> -->
 			</effect_group>
 			
