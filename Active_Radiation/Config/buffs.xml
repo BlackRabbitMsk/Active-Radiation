@@ -90,7 +90,7 @@
 			</effect_group>
 			
 			<effect_group name="IRRADIATION_Regen">
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenBase" operation="set" value="0.016"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenBase" operation="set" value="0.032"/>	
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="set" value="0"/>
 			
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="add" value="@$armorHeadProtect"/>
@@ -105,14 +105,14 @@
 				
 						
 				<!-- RECOVERY COUNTER -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="multiply" value="0.004"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="add" value="0.008">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="multiply" value="0.008"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="add" value="0.016">
 					<requirement name="HasBuff" buff="buffActiveRadiationResist1"/>
 				</triggered_effect>	
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="add" value="0.016">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="add" value="0.032">
 					<requirement name="HasBuff" buff="buffActiveRadiationResist2"/>
 				</triggered_effect>	
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="add" value="0.032">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadRegenCount" operation="add" value="0.064">
 					<requirement name="HasBuff" buff="buffActiveRadiationResist3"/>
 				</triggered_effect>
 				
@@ -134,13 +134,13 @@
 			</effect_group>
 			
 			<effect_group name="IRRADIATION_Impact">
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadImpactBase" operation="set" value="0.016"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadImpactBase" operation="set" value="0.032"/>	
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadImpactCount" operation="set" value="0"/>
 						
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadImpactCount" operation="add" value="0.016">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadImpactCount" operation="add" value="0.032">
 					<requirement name="HasBuff" buff="buffActiveRadiationImpact2"/>
 				</triggered_effect>	
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadImpactCount" operation="add" value="0.064">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadImpactCount" operation="add" value="0.0128">
 					<requirement name="HasBuff" buff="buffActiveRadiationImpact3"/>
 				</triggered_effect>	
 
